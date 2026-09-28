@@ -423,8 +423,8 @@ body{font-family:var(--serif);font-weight:400;-webkit-font-smoothing:antialiased
 
 </div>
 
-<div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-<div class="hint" id="hint">上滑继续 ↓</div>
+<div class="dots light" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="hint light" id="hint">上滑继续 ↓</div>
 
 <script>
 (function(){
@@ -434,6 +434,7 @@ body{font-family:var(--serif);font-weight:400;-webkit-font-smoothing:antialiased
   var hint=document.getElementById('hint');
 
   // 页码点
+  dots.innerHTML='';
   pages.forEach(function(p,i){
     var d=document.createElement('i');
     if(i===0)d.className='on';
